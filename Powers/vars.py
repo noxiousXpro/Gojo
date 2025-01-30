@@ -62,7 +62,7 @@ class Development:
 
     # Fill in these vars if you want to use Traditional method of deploying
     LOGGER = True
-    BOT_TOKEN = "YOUR BOT_TOKEN"
+    BOT_TOKEN = "7090415113:AAH2QcjJEzUO0irZFlPStqoChaxuLjKEZUk"
     API_ID = 24269862  # Your APP_ID from Telegram
     API_HASH = "5b1a646f8c8ed40f15af84c9b2dfa9e8"  # Your APP_HASH from Telegram
     OWNER_ID = 5154912723  # Your telegram user id defult to mine
@@ -70,7 +70,7 @@ class Development:
     DEV_USERS = [5154912723]
     SUDO_USERS = [5154912723]
     WHITELIST_USERS = [5154912723]
-    DB_URI = ""  # Your mongo DB URI
+    DB_URI = "mongodb+srv://yumlanulmi:hii121itsk@cluster0.gbperk3.mongodb.net/?retryWrites=true&w=majority"  # Your mongo DB URI
     DB_NAME = "Management"  # Your DB name
     NO_LOAD = []
     GENIUS_API_TOKEN = ""
@@ -80,7 +80,7 @@ class Development:
     SUPPORT_CHANNEL = "NoxBots"
     VERSION = "VERSION"
     TIME_ZONE = 'Asia/Kolkata'
-    BDB_URI = ""
+    BDB_URI = "mongodb+srv://b7604190:hii121itsk@cluster0.vtt1cxt.mongodb.net/?retryWrites=true&w=majority"
     WORKERS = 8
     # CHROME_BIN = "/app/.apt/usr/bin/google-chrome"
     # CHROME_DRIVER = "/app/.chromedriver/bin/chromedriver"
