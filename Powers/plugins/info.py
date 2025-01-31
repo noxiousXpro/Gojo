@@ -156,9 +156,7 @@ async def user_info(c: Gojo, user, already=False):
 <b>🗣 Full Name</b>: <code>{first_name} {last_name}</code>
 <b>🔍 Username</b>: {("@" + username) if username else "NA"}
 <b>✍️ Bio</b>: `{about}`\n"""
-    if dob:
-        caption += f"<b>🎂 Birthday<b>: {dob}\n<b>🧑‍💻 Support</b>: {is_support}\n"
-    else:
+    if is_support:
         caption += f"<b>🧑‍💻 Support</b>: {is_support}\n"
     if is_support:
         caption += f"<b>🥷 Support user type</b>: <code>{omp}</code>\n<b>💣 Gbanned</b>: {gban}\n"
