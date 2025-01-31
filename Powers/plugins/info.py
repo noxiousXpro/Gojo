@@ -85,7 +85,8 @@ async def user_info(c: Gojo, user, already=False):
     about = full_user.about
     SUPPORT_STAFF = get_support_staff()
     username = user.username
-    full_name = user.full_name
+    first_name = user.first_name
+    last_name = user.last_name
     dc_id = user.dc_id
     is_verified = user.is_verified
     mention = user.mention
@@ -152,7 +153,7 @@ async def user_info(c: Gojo, user, already=False):
 
 <b>🆔 User ID</b>: <code>{user_id}</code>
 <b>🫵 Mention</b>: {mention}
-<b>🗣 Full Name</b>: <code>{full_name}</code>
+<b>🗣 Full Name</b>: <code>{first_name} {last_name}</code>
 <b>🔍 Username</b>: {("@" + username) if username else "NA"}
 <b>✍️ Bio</b>: `{about}`\n"""
     if dob:
