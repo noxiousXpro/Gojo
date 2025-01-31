@@ -57,7 +57,6 @@ class Gojo(Client):
         Config.BOT_ID = meh.id
         Config.BOT_NAME = meh.first_name
         Config.BOT_USERNAME = meh.username
-        startmsg = await self.send_message(MESSAGE_DUMP, "<i>Starting Bot...</i>")
 
         # Show in Log that bot has started
         LOGGER.info(
@@ -79,14 +78,7 @@ class Gojo(Client):
             scheduler.start()
         # Send a message to MESSAGE_DUMP telling that the
         # bot has started and has loaded all plugins!
-        await startmsg.edit_text(
-            (
-                f"<b><i>@{meh.username} started on Pyrogram v{__version__} (Layer - {layer})</i></b>\n"
-                f"\n<b>Python:</b> <u>{python_version()}</u>\n"
-                "\n<b>Loaded Plugins:</b>\n"
-                f"<i>{cmd_list}</i>\n"
-            ),
-        )
+        
 
         LOGGER.info("Bot Started Successfully!\n")
 
