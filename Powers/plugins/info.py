@@ -91,20 +91,6 @@ async def user_info(c: Gojo, user, already=False):
     is_verified = user.is_verified
     mention = user.mention
     dob = False
-    if dob := full_user.birthday:
-        dob = datetime(int(dob.year), int(dob.month), int(dob.day)).strftime("%d %B %Y")
-    else:
-        if BDB_URI:  
-            try:      
-                if result := bday_info.find_one({"user_id": user}):
-                    u_dob = datetime.strptime(result["dob"], "%d/%m/%Y")
-                    day = u_dob.day
-                    formatted = u_dob.strftime("%B %Y")
-                    suffix = {1: 'st', 2: 'nd', 3: 'rd'}.get(day % 10, 'th')
-                    dob = f"{day}{suffix} {formatted}"
-            except:
-                pass
-
     is_restricted = user.is_restricted
     photo_id = user.photo.big_file_id if user.photo else None
     is_support = user_id in SUPPORT_STAFF
