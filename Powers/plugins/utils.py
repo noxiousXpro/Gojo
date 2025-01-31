@@ -483,4 +483,4 @@ Some utils provided by bot to make your tasks easy!
 • /botstaffs : Give the list of the bot staffs.
 
 **Example:**
-`/git iamgojoof6eyes`: this fetches the information about a user from the database."""
+`/git `: this fetches the information about a user from the database."""
