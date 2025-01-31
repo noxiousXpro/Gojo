@@ -3,6 +3,9 @@ from platform import system
 
 from Powers import LOGGER
 from Powers.bot_class import Gojo
+def start(self, use_qr=False):
+    # Your logic here
+    
 
 if __name__ == "__main__":
     if system() == "Windows":
