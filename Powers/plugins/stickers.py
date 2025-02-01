@@ -1,4 +1,4 @@
-from random import choice
+lfrom random import choice
 from traceback import format_exc
 
 from pyrogram import filters
@@ -276,7 +276,7 @@ async def memify_it(c: Gojo, m: Message):
     kb = IKM(
         [
             [
-                IKB("You might like", url="https://t.me/me_and_ghost")
+                IKB("You might like", url="https://t.me/Noxbots")
             ]
         ]
     )
