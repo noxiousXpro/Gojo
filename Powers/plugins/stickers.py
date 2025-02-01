@@ -1,4 +1,4 @@
-lfrom random import choice
+from random import choice
 from traceback import format_exc
 
 from pyrogram import filters
