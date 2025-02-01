@@ -39,4 +39,4 @@ ujson==5.10.0
 Unidecode
 wikipedia==1.4.0
 youtube-search-python==1.6.6
-yt-dlp@git+https://github.com/HellBoy-OP/yt-dp-fork.git@af1fd12f675220df6793fc019dff320bc76e8080
+yt-dlp@git+https://github.com/yt-dlp/yt-dlp
